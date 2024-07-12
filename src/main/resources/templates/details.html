@@ -9,5 +9,14 @@
 
     <h1 th:text="${title}">Hello World</h1>
     <p>My First Hello World</p>
+
+    <p th:text="${user.name}"></p>
+    <p th:text="${user.lastname}"></p>
+    <li
+    th:if="${user.email != null}"
+    th:text="${user.email}"></li>
+
+
+    <li th:if="${user.email == null}" th:text="${'No tiene email'}"></li>
   </body>
 </html>
