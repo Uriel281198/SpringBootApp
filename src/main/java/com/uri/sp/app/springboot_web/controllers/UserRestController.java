@@ -27,7 +27,7 @@ public class UserRestController {
 
     }
 
-    @GetMapping("/list")
+    @GetMapping("/listjson")
     public List<User> list() {
         User user = new User("Uriel", "Arriaga");
 
